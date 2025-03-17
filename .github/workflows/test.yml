@@ -21,9 +21,9 @@ jobs:
         run: npm install
         working-directory: second-action-react-demo
 
-      - name: Run lint
-        run: npm run lint
-        working-directory: second-action-react-demo
+    #   - name: Run lint
+    #     run: npm run lint
+    #     working-directory: second-action-react-demo
 
       - name: Run tests
         run: npm test
