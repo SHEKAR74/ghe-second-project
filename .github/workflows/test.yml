@@ -23,9 +23,11 @@ jobs:
 
       - name: Run lint
         run: npm run lint
+        working-directory: second-action-react-demo
 
       - name: Run tests
         run: npm test
+        working-directory: second-action-react-demo
 
   deploy:
     needs: test  # Ensures deployment runs only if tests pass
