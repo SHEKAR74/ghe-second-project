@@ -43,9 +43,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: second-action-react-demo
 
       - name: Build project
         run: npm run build
+        working-directory: second-action-react-demo
 
       - name: Deploy
         run: echo "Deploying ..."
